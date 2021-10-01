@@ -1,3 +1,70 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.category-id-input-area{
+    width: 60.7%;
+}
+.modal-content-category {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    zoom: 1.5;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 75%;
+    zoom: 1.5;
+}
+
+/* The Close Button */
+.close-add-question {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close-add-category{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close-add-question:hover,
+.close-add-question:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-add-category:hover,
+.close-add-category:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-for-add-question {
+    display: none;
+}
+.form-for-add-category{
+    display: none;
+}
 .header{
     border: solid;
     margin-bottom: 10px;
@@ -36,19 +103,22 @@
     transition: height 0.6s ease-out;
 
 }
-.catregories{
-    border: solid;
-    position: center;
+.categories{
     margin-top: 15%;
+    word-wrap:break-word;
 }
-.category {
-    border: solid;
+.category-div{
     width: 100px;
     margin: 3% 5% 3% 5%;
-    align-items: center;
+}
+.category {
+    width: 200px;
+    margin: 3% 5% 3% 5%;
+    white-space: pre-wrap;
 }
 .questions{
     border: solid;
+    word-wrap:break-word;
 }
 .add-btn{
     margin-top: 4%;
